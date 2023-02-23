@@ -1,5 +1,5 @@
 const Box = (props) => {
-  const { box, text };
+  const { box, text }=props;
   return (
     <div className={`${box}`}>
       <p>{text}</p>
@@ -12,9 +12,9 @@ const element = (
   <div>
     <h1>Boxes</h1>
     <div className="boxContainer">
-      <Box box="box box1" text="Small" />
-      <Box box="box box2" text="Medium" />
-      <Box box="box box3" text="Large" />
+      <Box box="box1" text="Small" />
+      <Box box="box2" text="Medium" />
+      <Box box="box3" text="Large" />
     </div>
   </div>
 );
